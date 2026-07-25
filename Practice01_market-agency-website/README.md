@@ -20,8 +20,8 @@ Dark "signal readout" theme built for this redesign via the `frontend-design` sk
 
 ## Lead magnet
 Per the `lead-magnets` skill: the enquiry form is reframed around claiming a free **10-Point Growth Audit Checklist** (`growth-audit-checklist.html`), not a generic "send us a message" form.
-- Only Name + Email are required; Company and "biggest challenge" are optional, to minimize friction.
-- On successful submit, a "Download the Checklist" button reveals immediately (instant access), and FormSubmit's `_autoresponse` field sends a confirmation email — the "instant access + email copy" delivery pattern.
+- All four fields (Name, Email, Company, "biggest challenge") are required before the form can submit.
+- On successful submit, a "Download the Checklist" button reveals immediately (instant access), FormSubmit's `_autoresponse` field sends a confirmation email, and the browser speaks a thank-you message via the Web Speech API (`SpeechSynthesisUtterance`).
 - Three-item FAQ (native `<details>`, no JS) addresses the obvious objections right next to the form.
 
 ## SEO
