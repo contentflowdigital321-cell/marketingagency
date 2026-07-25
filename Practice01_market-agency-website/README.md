@@ -2,8 +2,13 @@
 
 A single-page, vanilla HTML/CSS/JS marketing consultancy site: hero section, testimonials, and a Formspree-powered enquiry form.
 
+![Preview of the site's hero section](assets/preview.png)
+
+**Live site**: https://contentflowdigital321-cell.github.io/marketingagency/
+
 ## Structure
 - `index.html` — everything: markup, CSS (in a `<style>` block), and JS (in a `<script>` block).
+- `assets/preview.png` — screenshot of the hero section for this README.
 
 ## Spec checklist (verified)
 - **Hero**: full-viewport height, gradient background, bold headline + subheadline, CTA button that smooth-scrolls to the enquiry form, sticky nav with Home/Testimonials/Contact anchors.
