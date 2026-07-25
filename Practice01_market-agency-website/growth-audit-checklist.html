@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>10-Point Growth Audit Checklist | Marketing Consultancy</title>
+    <meta name="description" content="A free, printable 10-point checklist to audit your marketing funnel in under 15 minutes.">
+    <meta name="robots" content="noindex, follow">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2305070d'/%3E%3Cpath d='M6 20 L13 20 L16 9 L19 24 L22 14 L26 14' stroke='%2343e7d6' stroke-width='2.4' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+
+        :root {
+            --bg-void: #05070d;
+            --bg-panel: #0d1220;
+            --border: rgba(148, 163, 184, 0.16);
+            --ink: #eef1f8;
+            --ink-muted: #8b93a8;
+            --cyan: #43e7d6;
+            --violet: #8c6bff;
+            --amber: #ffb454;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: var(--bg-void);
+            color: var(--ink);
+            line-height: 1.6;
+        }
+
+        .wrap { max-width: 720px; margin: 0 auto; padding: 3rem 1.5rem 4rem; }
+
+        .top-bar { display: flex; justify-content: space-between; align-items: center; margin-bottom: 2.5rem; }
+
+        .back-link { font-size: 0.9rem; color: var(--ink-muted); text-decoration: none; }
+        .back-link:hover { color: var(--cyan); }
+
+        .print-btn {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.8rem;
+            background: transparent;
+            border: 1px solid var(--border);
+            color: var(--ink);
+            padding: 0.6rem 1rem;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .print-btn:hover { border-color: var(--cyan); color: var(--cyan); }
+
+        .doc {
+            background: var(--bg-panel);
+            border: 1px solid var(--border);
+            border-radius: 16px;
+            padding: 2.5rem;
+        }
+
+        .eyebrow {
+            font-family: 'IBM Plex Mono', monospace;
+            font-size: 0.75rem;
+            letter-spacing: 0.14em;
+            text-transform: uppercase;
+            color: var(--cyan);
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        h1 {
+            font-family: 'Space Grotesk', sans-serif;
+            font-size: clamp(1.8rem, 5vw, 2.4rem);
+            margin-bottom: 0.75rem;
+        }
+
+        .intro { color: var(--ink-muted); margin-bottom: 2.5rem; max-width: 56ch; }
+
+        ol.checklist { list-style: none; counter-reset: item; }
+
+        ol.checklist li {
+            counter-increment: item;
+            display: flex;
+            gap: 1rem;
+            padding: 1.1rem 0;
+            border-bottom: 1px solid var(--border);
+        }
+
+        ol.checklist li:last-child { border-bottom: none; }
+
+        ol.checklist li::before {
+            content: counter(item, decimal-leading-zero);
+            font-family: 'IBM Plex Mono', monospace;
+            color: var(--cyan);
+            font-size: 0.85rem;
+            flex-shrink: 0;
+            padding-top: 0.2rem;
+        }
+
+        .item-title { font-weight: 600; margin-bottom: 0.25rem; }
+        .item-desc { color: var(--ink-muted); font-size: 0.92rem; }
+
+        .cta {
+            margin-top: 2.5rem;
+            padding-top: 2rem;
+            border-top: 1px solid var(--border);
+            text-align: center;
+        }
+
+        .cta p { color: var(--ink-muted); margin-bottom: 1rem; }
+
+        .cta a {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--cyan) 0%, var(--violet) 130%);
+            color: #04110f;
+            font-weight: 600;
+            text-decoration: none;
+            padding: 0.85rem 1.75rem;
+            border-radius: 8px;
+        }
+
+        @media print {
+            body { background: #fff; color: #111; }
+            .top-bar { display: none; }
+            .doc { border: none; background: #fff; padding: 0; }
+            .eyebrow, ol.checklist li::before { color: #444; }
+            .cta { display: none; }
+        }
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        <div class="top-bar">
+            <a href="index.html" class="back-link">&larr; Back to site</a>
+            <button class="print-btn" onclick="window.print()">Print / Save as PDF</button>
+        </div>
+
+        <div class="doc">
+            <span class="eyebrow">Free Resource</span>
+            <h1>The 10-Point Growth Audit Checklist</h1>
+            <p class="intro">Work through this in under 15 minutes to find where your marketing funnel is leaking, and what to fix first.</p>
+
+            <ol class="checklist">
+                <li>
+                    <div>
+                        <div class="item-title">Traffic source mix</div>
+                        <div class="item-desc">Are you over-reliant on a single channel? List your top three sources and their share of total traffic.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">Mobile load time</div>
+                        <div class="item-desc">Test your top landing page on mobile. Under 3 seconds is the bar &mdash; anything slower is losing you leads.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">One clear CTA above the fold</div>
+                        <div class="item-desc">Every core page should have a single, obvious next step &mdash; not three competing buttons.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">Unique meta titles &amp; descriptions</div>
+                        <div class="item-desc">Check your top 20 pages. Duplicate or missing tags are a quiet but common ranking leak.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">Lead form friction</div>
+                        <div class="item-desc">Count the fields on your main form. Every field beyond email and name can cost you 5&ndash;10% conversion.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">Email capture on your top page</div>
+                        <div class="item-desc">Your highest-traffic page should always have a way to capture an email, even if it isn't the goal of that page.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">Consistent UTM tagging</div>
+                        <div class="item-desc">Spot-check your last five campaigns. Inconsistent tagging quietly breaks your attribution.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">CAC vs. LTV</div>
+                        <div class="item-desc">Do you know both numbers for this quarter? If not, that's the first thing to fix before scaling spend.</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">Shared reporting cadence</div>
+                        <div class="item-desc">Does everyone on the team look at the same dashboard, or does each person have their own numbers?</div>
+                    </div>
+                </li>
+                <li>
+                    <div>
+                        <div class="item-title">One channel to cut</div>
+                        <div class="item-desc">Name the one underperforming channel you could pause this month, and what you'd do with the budget instead.</div>
+                    </div>
+                </li>
+            </ol>
+
+            <div class="cta">
+                <p>Want a second pair of eyes on your results?</p>
+                <a href="index.html#contact">Book a Strategy Call</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
