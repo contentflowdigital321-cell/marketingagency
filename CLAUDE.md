@@ -15,7 +15,7 @@ A single-page marketing consultancy website built in vanilla HTML/CSS/JS (no fra
 
 **Running it**: open `index.html` directly in a browser (`Start-Process index.html` on Windows). There is no dev server, build step, linter, or test suite.
 
-**Enquiry form**: submits via `fetch()` as JSON to `https://formspree.io/f/{YOUR_FORM_ID}` with `Accept: application/json`. The form ID is a placeholder (`YOUR_FORM_ID`) — submissions will 404 until it's replaced with a real Formspree form ID.
+**Enquiry form**: submits via `fetch()` as JSON to `https://formsubmit.co/ajax/contentflowdigital321@gmail.com` with `Accept: application/json`. No account or form ID needed — FormSubmit delivers straight to that inbox, though the first-ever submission to a new address requires a one-time email confirmation before delivery activates.
 
 ## Working conventions
 
