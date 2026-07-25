@@ -1,2 +1,3 @@
 .claude/
 *.pptx.pdf
+.playwright-mcp/
